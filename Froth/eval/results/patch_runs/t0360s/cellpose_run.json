@@ -1,0 +1,22 @@
+{
+  "method": "cellpose",
+  "cellpose_version": "4.2.1.1",
+  "model": "C:\\Users\\Laptop K1\\.cellpose\\models\\cpsam_v2",
+  "zero_shot": true,
+  "gates_applied": false,
+  "changed_from_default": {},
+  "image": "D:\\Taste of Research\\Froth\\eval\\data\\source_frames\\frame_t0360s.png",
+  "roi_offset": [
+    146,
+    640
+  ],
+  "roi_shape": [
+    376,
+    488
+  ],
+  "device": "cpu",
+  "seconds": 33.4,
+  "n_instances": 631,
+  "n_kept": 631,
+  "date": "2026-10-07 11:03"
+}

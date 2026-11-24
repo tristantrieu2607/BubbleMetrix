@@ -1,0 +1,41 @@
+{
+  "method": "Cellpose zero-shot (local)",
+  "case": "p1_t240s_v1_partial",
+  "fully_labelled": true,
+  "n_gt": 51,
+  "n_gt_unsure": 1,
+  "n_pred": 91,
+  "tp": 44,
+  "recall": 0.8627450980392157,
+  "recall_ci95": [
+    0.743,
+    0.932
+  ],
+  "mean_iou": 0.6650911757037422,
+  "mean_diam_ratio": 1.219738815760749,
+  "median_abs_diam_err": 0.22581826824638263,
+  "d32_ratio_matched": 1.1045290715037244,
+  "missed_entirely": 0,
+  "touched_unmatched": 7,
+  "label_floor_px": 0.0,
+  "recall_by_band": {
+    "0-12": "29/36",
+    "12-17": "11/11",
+    "17-25": "4/4",
+    "25+": "0/0"
+  },
+  "unsure_as_ignore": true,
+  "n_pred_judged": 41,
+  "n_pred_edge": 30,
+  "fp_d_median": 14.668929172241665,
+  "fp": 1,
+  "precision": 0.9777777777777777,
+  "precision_ci95": [
+    0.884,
+    0.996
+  ],
+  "f1": 0.9166666666666665,
+  "d32_ratio_image": 1.1446242735755405,
+  "count_ratio_image": 0.803921568627451,
+  "pred_file": "results/patch_runs/t0240s/cellpose_labels.npy"
+}

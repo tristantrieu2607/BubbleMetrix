@@ -1,0 +1,98 @@
+{
+  "schema_version": 2,
+  "image_file": "RotCoarse_1260rpm_90ppm_200air_900water_f065_crop512.png",
+  "relative_path": "RotCoarse_1260rpm_90ppm_200air_900water_f065_crop512.png",
+  "regime": "PULP: Rotor Raw (46-98 px, median 73 -- dense, use 'I' for occluded)",
+  "width": 512,
+  "height": 512,
+  "floor_px": 12.0,
+  "count": 5,
+  "confirmed_empty": false,
+  "bubbles": [
+    {
+      "shape_type": "circle",
+      "cx": 189.86666666666667,
+      "cy": 376.53333333333336,
+      "r": 48.75553529828401,
+      "label": "bubble",
+      "d_eq_px": 97.51,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 386.1333333333333,
+      "cy": 371.2,
+      "r": 32.742497020097765,
+      "label": "bubble",
+      "d_eq_px": 65.48,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 145.6,
+      "cy": 92.8,
+      "r": 38.403703525108675,
+      "label": "bubble",
+      "view": "raw",
+      "d_eq_px": 76.81,
+      "at_limit": false,
+      "touches_edge": false,
+      "touches_fov": false,
+      "unsure": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 356.8,
+      "cy": 218.13333333333333,
+      "r": 46.924241543624795,
+      "label": "bubble",
+      "view": "raw",
+      "d_eq_px": 93.85,
+      "at_limit": false,
+      "touches_edge": false,
+      "touches_fov": false,
+      "unsure": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 275.73333333333335,
+      "cy": 243.73333333333332,
+      "r": 37.685953764116285,
+      "label": "bubble",
+      "view": "clahe",
+      "d_eq_px": 75.37,
+      "at_limit": false,
+      "touches_edge": false,
+      "touches_fov": false,
+      "unsure": false
+    }
+  ],
+  "ignore_regions": [
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 5.866666666666666,
+      "y1": 194.13333333333333,
+      "x2": 101.33333333333333,
+      "y2": 329.06666666666666
+    },
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 260.8,
+      "y1": 401.06666666666666,
+      "x2": 371.73333333333335,
+      "y2": 492.8
+    }
+  ]
+}

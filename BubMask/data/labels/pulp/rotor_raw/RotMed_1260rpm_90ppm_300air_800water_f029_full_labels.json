@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "image_file": "RotMed_1260rpm_90ppm_300air_800water_f029_full.png",
+  "relative_path": "RotMed_1260rpm_90ppm_300air_800water_f029_full.png",
+  "regime": "PULP: Rotor Raw (46-98 px, median 73 -- dense, use 'I' for occluded)",
+  "width": 1024,
+  "height": 1024,
+  "floor_px": 12.0,
+  "count": 5,
+  "confirmed_empty": false,
+  "bubbles": [
+    {
+      "shape_type": "circle",
+      "cx": 393.3422933333333,
+      "cy": 795.1086933333333,
+      "r": 31.897179037707417,
+      "label": "bubble",
+      "view": "clahe",
+      "d_eq_px": 63.79,
+      "at_limit": false,
+      "touches_edge": false,
+      "touches_fov": false,
+      "unsure": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 400.6570666666667,
+      "cy": 865.4336000000001,
+      "r": 29.60224033804038,
+      "label": "bubble",
+      "view": "clahe",
+      "d_eq_px": 59.2,
+      "at_limit": false,
+      "touches_edge": false,
+      "touches_fov": false,
+      "unsure": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 907.6906666666669,
+      "cy": 862.336,
+      "r": 34.24238579434678,
+      "label": "bubble",
+      "view": "clahe",
+      "d_eq_px": 68.48,
+      "at_limit": false,
+      "touches_edge": false,
+      "touches_fov": false,
+      "unsure": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 190.93333333333334,
+      "cy": 444.8,
+      "r": 41.545263134187614,
+      "label": "bubble",
+      "view": "clahe",
+      "d_eq_px": 83.09,
+      "at_limit": false,
+      "touches_edge": false,
+      "touches_fov": false,
+      "unsure": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 885.8955093333334,
+      "cy": 695.7806933333334,
+      "r": 58.363009533246114,
+      "label": "bubble",
+      "view": "raw",
+      "d_eq_px": 116.73,
+      "at_limit": false,
+      "touches_edge": false,
+      "touches_fov": false,
+      "unsure": false
+    }
+  ],
+  "ignore_regions": []
+}

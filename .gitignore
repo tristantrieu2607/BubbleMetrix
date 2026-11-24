@@ -1,0 +1,24 @@
+# environments and caches
+.venv/
+__pycache__/
+.pytest_cache/
+# large binaries: model weights go in a GitHub Release, videos stay local
+*.pt
+*.pth
+*.avi
+*.mp4
+*.MP4
+*.tgz
+*.npy
+*.npz
+# local working data
+samples/
+teaching/
+models/
+progress/
+report/readings/
+BubMask/data/crops/
+Froth/eval/data/source_frames/
+Froth/roi/frames/
+*_view.png
+.claude/

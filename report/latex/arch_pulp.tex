@@ -1,0 +1,70 @@
+Mask R-CNN \citep{he2017} is a two-stage instance segmentation network: it
+first proposes where objects might be, then classifies each proposal,
+refines its box and draws a pixel mask for it. The version used is
+torchvision's Mask R-CNN ResNet-50-FPN v2 \citep{li2021}. Figure~\ref{fig:arch-pulp}
+shows the layers; shaded blocks are the parts changed for bubbles.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+  font=\footnotesize, >=Stealth,
+  blk/.style={draw, rounded corners=1.5pt, align=center, fill=gray!8, minimum height=13mm, text width=24mm, inner sep=2pt},
+  mod/.style={blk, fill=yellow!35},
+  io/.style={blk, fill=white, dashed},
+  arr/.style={->, thick}]
+% row 1: features and proposals
+\node[io]  (in)  at (0,0)    {Video frame\\1024$\times$1024\\(no resizing)};
+\node[blk] (bb)  at (3.3,0)  {Backbone\\ResNet-50\\4 stages, stride 4--32};
+\node[blk] (fpn) at (6.6,0)  {Feature pyramid\\(FPN)\\5 levels, 256 ch.};
+\node[mod] (rpn) at (9.9,0)  {Region proposal\\network\\round anchors 8--256 px};
+% row 2: per-proposal heads
+\node[blk] (roi) at (3.3,-3.4) {RoIAlign\\fixed-size patch\\per proposal};
+\node[mod] (box) at (6.6,-2.75) {Box head\\bubble score\\+ refined box};
+\node[blk] (msk) at (6.6,-4.3) {Mask head\\28$\times$28 pixel mask};
+\node[io]  (out) at (9.9,-3.5) {Bubble outline\\$\rightarrow$ diameter\\$\rightarrow$ D32};
+\draw[arr] (in) -- (bb); \draw[arr] (bb) -- (fpn); \draw[arr] (fpn) -- (rpn);
+\draw[arr] (fpn.south) -- ++(0,-0.4) -| node[pos=0.3, below, font=\scriptsize]{features} ([xshift=-4mm]roi.north);
+\draw[arr] (rpn.south) -- ++(0,-0.9) -| node[pos=0.15, above, font=\scriptsize]{best proposals} ([xshift=4mm]roi.north);
+\draw[arr] (roi.east) -- ++(2mm,0) |- (box.west);
+\draw[arr] (roi.east) -- ++(2mm,0) |- (msk.west);
+\draw[arr] (box.east) -- ++(2mm,0) |- (out.west);
+\draw[arr] (msk.east) -- ++(2mm,0) |- (out.west);
+\node[fill=yellow!35, draw, minimum width=4mm, minimum height=3mm, inner sep=0pt] (k) at (0,-5.5) {};
+\node[right=1mm of k, font=\scriptsize, align=left] {changed for bubbles: round anchors, and an ignore-aware loss in the proposal and box stages};
+\end{tikzpicture}
+\caption{Mask R-CNN as used for pulp bubbles. Shaded: parts changed in this project.}
+\label{fig:arch-pulp}
+\end{figure}
+
+\begin{enumerate}
+\tightlist
+\item \textbf{Backbone.} A ResNet-50 convolutional network turns the frame
+into feature maps at four scales (1/4 to 1/32 of the frame size). Early
+layers respond to edges and textures, deeper layers to larger shapes. It
+starts from weights pretrained on COCO, a public dataset of 118,000
+everyday photos with hand-outlined objects \citep{lin2014}, so it already
+knows general visual features before seeing a bubble (transfer learning).
+The first two stages are kept frozen during training.
+\item \textbf{Feature pyramid network (FPN).} Combines the deep and shallow
+maps so every scale has both detail and context. Small bubbles are found on
+the fine levels, large ones on the coarse levels.
+\item \textbf{Region proposal network (RPN).} Slides over every pyramid
+level and, at each position, scores a set of reference boxes (anchors) for
+``contains a bubble'' and adjusts their position and size. The anchors were
+changed to round (aspect ratio 1) and bubble-sized, 8--256~px.
+\item \textbf{RoIAlign.} Cuts a fixed-size feature patch out of the pyramid
+for each of the best proposals, without rounding errors, so a 20~px and a
+150~px bubble are both described by the same size of input to the heads.
+\item \textbf{Heads.} The box head decides bubble or background and refines
+the box; the mask head predicts, for each pixel in the box, whether it
+belongs to the bubble. The mask is resized back to the bubble, thresholded
+at 0.5, and its area gives the equivalent-area diameter.
+\end{enumerate}
+
+Training minimises the sum of five losses: proposal score and box, final
+score and box, and mask. In this project, proposals and boxes that fall
+mostly inside a hand-drawn ignore region (part-hidden bubbles) are removed
+from the background part of these losses, so the network is never taught
+that a hidden bubble is empty water. The changes made for bubbles are listed
+below.
+

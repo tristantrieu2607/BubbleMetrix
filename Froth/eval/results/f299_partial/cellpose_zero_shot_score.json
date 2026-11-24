@@ -1,0 +1,30 @@
+{
+  "method": "Cellpose (zero-shot)",
+  "case": "f299_partial",
+  "fully_labelled": false,
+  "n_gt": 26,
+  "n_gt_unsure": 0,
+  "n_pred": 341,
+  "tp": 26,
+  "recall": 1.0,
+  "recall_ci95": [
+    0.871,
+    1.0
+  ],
+  "mean_iou": 0.7959983387436361,
+  "mean_diam_ratio": 0.9873349351869044,
+  "median_abs_diam_err": 0.046741817230852134,
+  "d32_ratio_matched": 0.9661735316705395,
+  "missed_entirely": 0,
+  "touched_unmatched": 0,
+  "label_floor_px": 12.0,
+  "recall_by_band": {
+    "0-12": "0/0",
+    "12-17": "0/0",
+    "17-25": "13/13",
+    "25+": "13/13"
+  },
+  "precision": null,
+  "precision_note": "not computable: partially labelled case",
+  "pred_file": "results\\f299_partial\\runs\\cellpose\\cellpose_labels.npy"
+}

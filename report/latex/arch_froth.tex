@@ -1,0 +1,50 @@
+\textbf{How Cellpose works.} Cellpose \citep{stringer2021} was designed to
+separate touching cells in microscope images, which is the same problem as
+separating packed froth bubbles. Instead of drawing boxes, it predicts for
+every pixel which way to move to reach the centre of the object it belongs
+to (Figure~\ref{fig:arch-froth}).
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+  font=\footnotesize, >=Stealth, node distance=4mm,
+  blk/.style={draw, rounded corners=1.5pt, align=center, fill=gray!8, minimum height=10mm, inner sep=3pt},
+  io/.style={blk, fill=white, dashed},
+  arr/.style={->, thick}]
+\node[io] (in) {Froth image\\(in-focus band)\\tiles of\\256$\times$256};
+\node[blk, right=of in] (pe) {Patch\\embedding\\8$\times$8 px\\patches};
+\node[blk, right=of pe] (vit) {SAM image encoder\\ViT-L\\24 transformer blocks\\(global attention)};
+\node[blk, right=of vit] (head) {Output layer\\$\rightarrow$ full-resolution\\maps};
+\node[blk, below=9mm of head] (maps) {3 maps per pixel:\\horizontal flow,\\vertical flow,\\object probability};
+\node[blk, left=of maps] (dyn) {Flow tracking\\pixels follow the flows\\and gather at centres};
+\node[io, left=of dyn] (out) {One mask per bubble\\$\rightarrow$ equivalent-area\\diameter $\rightarrow$ D32};
+\draw[arr] (in) -- (pe); \draw[arr] (pe) -- (vit); \draw[arr] (vit) -- (head);
+\draw[arr] (head) -- (maps); \draw[arr] (maps) -- (dyn); \draw[arr] (dyn) -- (out);
+\end{tikzpicture}
+\caption{Cellpose-SAM as used for froth bubbles, with default settings and no froth training.}
+\label{fig:arch-froth}
+\end{figure}
+
+\begin{enumerate}
+\tightlist
+\item \textbf{Encoder.} Cellpose-SAM \citep{pachitariu2025} replaces the
+original Cellpose U-Net with the image encoder of Segment Anything
+\citep[SAM,][]{kirillov2023}, a vision transformer (ViT-L) pretrained on
+about one billion object masks. The image is split into 8$\times$8~px
+patches, and the transformer blocks let every patch compare itself with
+every other patch in the tile. SAM's own prompt and mask decoders are
+removed.
+\item \textbf{Outputs.} For every pixel the network predicts a horizontal
+and a vertical flow (a small arrow pointing towards the centre of the
+object) and the probability that the pixel belongs to any object.
+\item \textbf{Flow tracking.} Pixels with high probability are moved step
+by step along the arrows. Pixels that end up at the same point form one
+object, so two bubbles that touch are still split along the wall between
+them. Masks whose flows are inconsistent are discarded.
+\end{enumerate}
+
+The released model was trained on about 23,000 microscope images with 3.3
+million outlined cells \citep{pachitariu2025}. It was used here exactly as
+released, which is why froth measurement needed no labelled froth training
+data.
+

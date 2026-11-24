@@ -1,0 +1,85 @@
+{
+  "schema_version": 2,
+  "image_file": "RotCoarse_1260rpm_90ppm_300air_800water_f090_full.png",
+  "relative_path": "RotCoarse_1260rpm_90ppm_300air_800water_f090_full.png",
+  "regime": "PULP: Rotor Raw (46-98 px, median 73 -- dense, use 'I' for occluded)",
+  "width": 1024,
+  "height": 1024,
+  "floor_px": 12.0,
+  "count": 4,
+  "confirmed_empty": false,
+  "bubbles": [
+    {
+      "shape_type": "circle",
+      "cx": 344.53333333333336,
+      "cy": 768.0,
+      "r": 35.85650413647272,
+      "label": "bubble",
+      "view": "clahe",
+      "d_eq_px": 71.71,
+      "at_limit": false,
+      "touches_edge": false,
+      "touches_fov": false,
+      "unsure": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 643.0679040000002,
+      "cy": 723.3894399999998,
+      "r": 33.300428834947716,
+      "label": "bubble",
+      "view": "raw",
+      "d_eq_px": 66.6,
+      "at_limit": false,
+      "touches_edge": false,
+      "touches_fov": false,
+      "unsure": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 371.2246069475555,
+      "cy": 818.4643957191113,
+      "r": 8.537036233630662,
+      "label": "bubble",
+      "view": "raw",
+      "d_eq_px": 17.07,
+      "at_limit": true,
+      "touches_edge": false,
+      "touches_fov": false,
+      "unsure": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 438.4,
+      "cy": 132.26666666666668,
+      "r": 64.22183775355892,
+      "label": "bubble",
+      "view": "clahe",
+      "d_eq_px": 128.44,
+      "at_limit": false,
+      "touches_edge": false,
+      "touches_fov": false,
+      "unsure": false
+    }
+  ],
+  "ignore_regions": [
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 399.12106666666665,
+      "y1": 817.8176000000001,
+      "x2": 499.0634666666666,
+      "y2": 910.1141333333333
+    },
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 854.4,
+      "y1": 625.0666666666667,
+      "x2": 948.2666666666667,
+      "y2": 717.8666666666667
+    }
+  ]
+}

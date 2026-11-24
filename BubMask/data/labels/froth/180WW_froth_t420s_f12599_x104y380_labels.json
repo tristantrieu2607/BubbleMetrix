@@ -1,0 +1,13 @@
+{
+  "image_file": "180WW_froth_t420s_f12599_x104y380.png",
+  "relative_path": "froth/180WW_froth_t420s_f12599_x104y380.png",
+  "regime": "FROTH (Polyhedral Mosaic)",
+  "width": 512,
+  "height": 512,
+  "count": 0,
+  "bubbles": [],
+  "ignore_regions": [],
+  "confirmed_empty": false,
+  "schema_version": 2,
+  "floor_px": 12.0
+}

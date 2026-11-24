@@ -1,0 +1,14 @@
+# One environment for every froth method (BubSAM3, Cellpose, the evaluation).
+# Installed by setup.ps1 into Froth\.venv. CPU builds of torch come from PyPI on Windows.
+numpy
+scipy
+pillow
+matplotlib
+scikit-image
+# headless: cellpose depends on it, and having both opencv-python and the
+# headless build installed breaks `import cv2`. Nothing here opens a cv2 window.
+opencv-python-headless
+torch
+torchvision
+segment-anything==1.0
+cellpose>=4,<5

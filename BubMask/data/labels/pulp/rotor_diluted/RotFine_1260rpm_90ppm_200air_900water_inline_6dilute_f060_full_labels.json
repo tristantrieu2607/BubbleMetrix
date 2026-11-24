@@ -1,0 +1,79 @@
+{
+  "image_file": "RotFine_1260rpm_90ppm_200air_900water_inline_6dilute_f060_full.png",
+  "relative_path": "RotFine_1260rpm_90ppm_200air_900water_inline_6dilute_f060_full.png",
+  "regime": "PULP: Rotor Diluted (30-70px)",
+  "width": 1024,
+  "height": 1024,
+  "count": 5,
+  "bubbles": [
+    {
+      "shape_type": "circle",
+      "cx": 596.2666666666667,
+      "cy": 777.6,
+      "r": 73.04135814728532,
+      "label": "bubble",
+      "d_eq_px": 146.08,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 446.93333333333334,
+      "cy": 756.2666666666667,
+      "r": 43.5769561937397,
+      "label": "bubble",
+      "d_eq_px": 87.15,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 709.3333333333334,
+      "cy": 663.4666666666667,
+      "r": 55.81429526165813,
+      "label": "bubble",
+      "d_eq_px": 111.63,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 208.0,
+      "cy": 855.4666666666667,
+      "r": 56.894444173203524,
+      "label": "bubble",
+      "d_eq_px": 113.79,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 54.4,
+      "cy": 782.9333333333333,
+      "r": 91.64026286397146,
+      "label": "bubble",
+      "d_eq_px": 183.28,
+      "at_limit": false,
+      "touches_edge": true,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": true
+    }
+  ],
+  "ignore_regions": [],
+  "confirmed_empty": false,
+  "schema_version": 2,
+  "floor_px": 12.0
+}

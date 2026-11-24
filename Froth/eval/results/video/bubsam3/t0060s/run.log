@@ -1,0 +1,35 @@
+[02:20:26] loaded frame_t0060s.png (1280, 720, 3)
+[02:20:27] Measurable In-Focus ROI y[648:1040] x[146:633] -> (392, 487, 3) (21% of frame)
+[02:20:27] CLAHE applied (clip=2.0)
+[02:20:27] device: cpu  threads: 2
+[02:21:09] tiling 487x392 -> 6 tiles of 256x256 (overlap 96), 4x upscale -> 1024x1024
+[02:25:37]   tile 1/6 (0,0): +212 masks, 268s
+[02:30:05]   tile 2/6 (160,0): +305 masks, 268s
+[02:34:42]   tile 3/6 (231,0): +272 masks, 276s
+[02:38:58]   tile 4/6 (0,136): +237 masks, 256s
+[02:43:17]   tile 5/6 (160,136): +299 masks, 259s
+[02:47:28]   tile 6/6 (231,136): +268 masks, 251s
+[02:47:28] tile-edge rejections: 183; raw pool 1593
+[02:47:28] generation took 1579 s
+[02:47:28] raw pool saved: /tmp/claude-0/-home-claude/b8c0cd49-56a7-53d2-844d-b295e3ef9a2a/scratchpad/video/bubsam3/t0060s/bubsam3_raw.npz (1593 contours)
+[02:47:29] clump split: 42 masks -> 89 children (pool 1593 -> 1640)
+[02:47:29] edge support: 1640 -> 1576 (boundary gradient >= 0.25 x ROI p75)
+[02:47:29] shape gates: 1576 -> 1472
+[02:47:29] NMS: 1472 -> 692 (mask iou >= 0.55) in 0.1s
+[02:47:29] containment: 692 -> 683 (dropped 9 masks >65% covered by smaller)
+[02:47:29] residual pass: 54% of ROI area unclaimed
+[02:47:30] residual pass: 61 watershed bubbles recovered
+[02:47:30] overlay saved: /tmp/claude-0/-home-claude/b8c0cd49-56a7-53d2-844d-b295e3ef9a2a/scratchpad/video/bubsam3/t0060s/bubsam3_overlay.png
+[02:47:30] overlay saved: /tmp/claude-0/-home-claude/b8c0cd49-56a7-53d2-844d-b295e3ef9a2a/scratchpad/video/bubsam3/t0060s/bubsam3_overlay_by_source.png
+[02:47:30] overlay saved: /tmp/claude-0/-home-claude/b8c0cd49-56a7-53d2-844d-b295e3ef9a2a/scratchpad/video/bubsam3/t0060s/bubsam3_rejected_clumps.png
+[02:47:30] mask table saved: /tmp/claude-0/-home-claude/b8c0cd49-56a7-53d2-844d-b295e3ef9a2a/scratchpad/video/bubsam3/t0060s/bubsam3_masks.csv (744 rows)
+[02:47:31] instances saved: /tmp/claude-0/-home-claude/b8c0cd49-56a7-53d2-844d-b295e3ef9a2a/scratchpad/video/bubsam3/t0060s/bubsam3_instances.npz (744 outlines)
+
+  bubbles         : 744   (sam 652, split 31, ws 61)
+  diameter px     : min 4.1  median 10.5  mean 11.5  p95 19.8  max 43.3
+  D32 (Sauter)    : 16.2 px
+
+  A count and a size distribution - NOT a recall figure.
+  Score it:  .venv/Scripts/python.exe score_handcount.py \
+                 results/bubsam3_masks.csv --image-size 486x820
+

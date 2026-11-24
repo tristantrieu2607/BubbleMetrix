@@ -1,0 +1,92 @@
+{
+  "schema_version": 2,
+  "image_file": "Venturi_200_air_60_ppm_f040_crop512.png",
+  "relative_path": "venturi_air/Venturi_200_air_60_ppm_f040_crop512.png",
+  "regime": "PULP: Venturi Air (Microbubbles 10-35px)",
+  "width": 512,
+  "height": 512,
+  "floor_px": 12.0,
+  "count": 6,
+  "confirmed_empty": false,
+  "bubbles": [
+    {
+      "shape_type": "circle",
+      "cx": 44.8,
+      "cy": 340.8,
+      "r": 6.682647512608898,
+      "label": "bubble",
+      "d_eq_px": 13.37,
+      "at_limit": true,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 54.93333333333333,
+      "cy": 274.1333333333333,
+      "r": 7.175266158439301,
+      "label": "bubble",
+      "d_eq_px": 14.35,
+      "at_limit": true,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 260.26666666666665,
+      "cy": 433.06666666666666,
+      "r": 6.422183775355927,
+      "label": "bubble",
+      "d_eq_px": 12.84,
+      "at_limit": true,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 101.86666666666666,
+      "cy": 378.1333333333333,
+      "r": 6.829999186595032,
+      "label": "bubble",
+      "d_eq_px": 13.66,
+      "at_limit": true,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 205.33333333333334,
+      "cy": 410.6666666666667,
+      "r": 8.616263691415202,
+      "label": "bubble",
+      "d_eq_px": 17.23,
+      "at_limit": true,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 44.266666666666666,
+      "cy": 316.26666666666665,
+      "r": 6.829999186595067,
+      "label": "bubble",
+      "d_eq_px": 13.66,
+      "at_limit": true,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    }
+  ],
+  "ignore_regions": []
+}

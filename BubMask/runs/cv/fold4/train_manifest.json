@@ -1,0 +1,93 @@
+{
+  "status": "complete",
+  "num_epochs": 12,
+  "best_loss": 0.29379374075781656,
+  "best_epoch": 11,
+  "best_selected_on": "train",
+  "train_crops": 47,
+  "train_tiles": 295,
+  "val_tiles": 0,
+  "split_note": "clip-level split: 47 train / 0 val / 8 test crops held out; test clips = RotFine_1260rpm_90ppm_300air_800water",
+  "anchor_scheme": "round3",
+  "scale_jitter": {
+    "prob": 0.5,
+    "range": [
+      0.75,
+      2.0
+    ]
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 0.7717591949512024,
+      "val_loss": null,
+      "lr": 0.0009829799502313896
+    },
+    {
+      "epoch": 2,
+      "loss": 0.5426065154575013,
+      "val_loss": null,
+      "lr": 0.0009330796891903274
+    },
+    {
+      "epoch": 3,
+      "loss": 0.48107376664474205,
+      "val_loss": null,
+      "lr": 0.0008536998372026806
+    },
+    {
+      "epoch": 4,
+      "loss": 0.446570327782349,
+      "val_loss": null,
+      "lr": 0.0007502500000000002
+    },
+    {
+      "epoch": 5,
+      "loss": 0.40340551970576916,
+      "val_loss": null,
+      "lr": 0.0006297801130287093
+    },
+    {
+      "epoch": 6,
+      "loss": 0.40079591445926877,
+      "val_loss": null,
+      "lr": 0.0005005000000000001
+    },
+    {
+      "epoch": 7,
+      "loss": 0.3763089834435566,
+      "val_loss": null,
+      "lr": 0.000371219886971291
+    },
+    {
+      "epoch": 8,
+      "loss": 0.3545803526366079,
+      "val_loss": null,
+      "lr": 0.00025075000000000016
+    },
+    {
+      "epoch": 9,
+      "loss": 0.3346804184587421,
+      "val_loss": null,
+      "lr": 0.00014730016279731957
+    },
+    {
+      "epoch": 10,
+      "loss": 0.3170872543107819,
+      "val_loss": null,
+      "lr": 6.792031080967288e-05
+    },
+    {
+      "epoch": 11,
+      "loss": 0.29379374075781656,
+      "val_loss": null,
+      "lr": 1.802004976861044e-05
+    },
+    {
+      "epoch": 12,
+      "loss": 0.29904336502423157,
+      "val_loss": null,
+      "lr": 1e-06
+    }
+  ]
+}

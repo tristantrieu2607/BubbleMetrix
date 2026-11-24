@@ -1,0 +1,28 @@
+{
+  "_comment": [
+    "Variant of split_clips.json that ADDS the rotor_diluted clip to training, to test",
+    "whether 29 more instances from a brighter, larger-bubble regime help or hurt.",
+    "The RotFine test clip is swapped from '..._inline' to '..._1440rpm' because the",
+    "dilute clip IS '..._inline_6dilute' -- the diluted version of that same inline",
+    "stream. Training on one while testing on the other is the closest-related pair in",
+    "the set and would leak. '..._inline' moves into training.",
+    "Fixed before any result was seen, so the change is not result-driven."
+  ],
+  "regime": "rotor_raw + rotor_diluted",
+  "fixed_on": "2026-09-07",
+  "test_clips": [
+    "RotCoarse_1260rpm_90ppm_300air_800water",
+    "RotFine_1440rpm_90ppm_200air_900water",
+    "RotMed_1260rpm_90ppm_300air_800water"
+  ],
+  "train_clips": [
+    "RotCoarse_1260rpm_90ppm_200air_900water",
+    "RotFine_1260rpm_90ppm_200air_900water",
+    "RotFine_1260rpm_90ppm_200air_900water_inline",
+    "RotMed_1260rpm_90ppm_200air_900water",
+    "RotFine_1260rpm_90ppm_200air_900water_inline_6dilute"
+  ],
+  "val_clips": [
+    "RotFine_1260rpm_90ppm_300air_800water"
+  ]
+}

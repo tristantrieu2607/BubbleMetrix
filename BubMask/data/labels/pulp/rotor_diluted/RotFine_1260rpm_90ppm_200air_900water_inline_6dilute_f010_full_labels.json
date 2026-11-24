@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "image_file": "RotFine_1260rpm_90ppm_200air_900water_inline_6dilute_f010_full.png",
+  "relative_path": "RotFine_1260rpm_90ppm_200air_900water_inline_6dilute_f010_full.png",
+  "regime": "PULP: Rotor Diluted (87-187 px, median 125 -- large and sparse)",
+  "width": 1024,
+  "height": 1024,
+  "floor_px": 12.0,
+  "count": 5,
+  "confirmed_empty": false,
+  "bubbles": [
+    {
+      "shape_type": "circle",
+      "cx": 329.6,
+      "cy": 769.0666666666667,
+      "r": 58.1993508936692,
+      "label": "bubble",
+      "d_eq_px": 116.4,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 859.7333333333333,
+      "cy": 654.9333333333333,
+      "r": 72.54117604658907,
+      "label": "bubble",
+      "d_eq_px": 145.08,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 212.26666666666668,
+      "cy": 498.1333333333333,
+      "r": 55.476922128835604,
+      "label": "bubble",
+      "d_eq_px": 110.95,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 544.0,
+      "cy": 929.0666666666667,
+      "r": 61.87586138569887,
+      "label": "bubble",
+      "d_eq_px": 123.75,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 906.6666666666666,
+      "cy": 530.1333333333333,
+      "r": 60.42457189661245,
+      "label": "bubble",
+      "d_eq_px": 120.85,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    }
+  ],
+  "ignore_regions": []
+}

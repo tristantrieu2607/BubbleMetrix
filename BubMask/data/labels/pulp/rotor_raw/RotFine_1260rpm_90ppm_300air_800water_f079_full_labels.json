@@ -1,0 +1,92 @@
+{
+  "schema_version": 2,
+  "image_file": "RotFine_1260rpm_90ppm_300air_800water_f079_full.png",
+  "relative_path": "RotFine_1260rpm_90ppm_300air_800water_f079_full.png",
+  "regime": "PULP: Rotor Raw (46-98 px, median 73 -- dense, use 'I' for occluded)",
+  "width": 1024,
+  "height": 1024,
+  "floor_px": 12.0,
+  "count": 6,
+  "confirmed_empty": false,
+  "bubbles": [
+    {
+      "shape_type": "circle",
+      "cx": 390.820864,
+      "cy": 836.2762240000002,
+      "r": 37.69853926718907,
+      "label": "bubble",
+      "view": "raw",
+      "d_eq_px": 75.4,
+      "at_limit": false,
+      "touches_edge": false,
+      "touches_fov": false,
+      "unsure": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 39.46666666666667,
+      "cy": 609.0666666666667,
+      "r": 48.938964253672275,
+      "label": "bubble",
+      "view": "clahe",
+      "d_eq_px": 97.88,
+      "at_limit": false,
+      "touches_edge": true,
+      "touches_fov": false,
+      "unsure": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 558.649171968,
+      "cy": 143.5099409066667,
+      "r": 35.038062394933114,
+      "label": "bubble",
+      "view": "clahe",
+      "d_eq_px": 70.08,
+      "at_limit": false,
+      "touches_edge": false,
+      "touches_fov": false,
+      "unsure": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 314.1305357653333,
+      "cy": 389.6888606720002,
+      "r": 28.60457982037156,
+      "label": "bubble",
+      "view": "raw",
+      "d_eq_px": 57.21,
+      "at_limit": false,
+      "touches_edge": false,
+      "touches_fov": false,
+      "unsure": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 781.1406506666667,
+      "cy": 611.9325013333333,
+      "r": 46.80116804619762,
+      "label": "bubble",
+      "view": "clahe",
+      "d_eq_px": 93.6,
+      "at_limit": false,
+      "touches_edge": false,
+      "touches_fov": false,
+      "unsure": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 879.6722135040001,
+      "cy": 428.2338699946667,
+      "r": 39.18376973267244,
+      "label": "bubble",
+      "view": "clahe",
+      "d_eq_px": 78.37,
+      "at_limit": false,
+      "touches_edge": false,
+      "touches_fov": false,
+      "unsure": false
+    }
+  ],
+  "ignore_regions": []
+}

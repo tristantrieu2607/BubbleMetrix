@@ -1,0 +1,14 @@
+{
+ "stem": "180WW_t150s_roi",
+ "video": "samples/froth/180WW.MP4",
+ "frame_index": 4500,
+ "time_s": 150,
+ "roi_xyxy": [
+  146,
+  632,
+  634,
+  1040
+ ],
+ "source_frame": "Froth/eval/data/source_frames/frame_t0150s.png",
+ "why": "in-focus region (crop_measurable, same as the GUI) of a frame no model overlay has been shown for"
+}

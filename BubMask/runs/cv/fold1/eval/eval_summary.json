@@ -1,0 +1,116 @@
+{
+  "weights": "runs/cv\\fold1\\last.pt",
+  "split_note": "test side of data/split_clips.json: 3 crops from 1 held-out clip(s) -- RotCoarse_1260rpm_90ppm_300air_800water",
+  "crops_evaluated": 3,
+  "iou_threshold": 0.5,
+  "score_threshold": 0.4,
+  "iou_kind": "mask",
+  "diameter_measurand": "equivalent-area diameter (2*sqrt(A/pi)), both sides",
+  "total_gt_bubbles": 10,
+  "total_pred_bubbles": 23,
+  "predictions_dropped_inside_ignore": 7,
+  "predictions_dropped_below_floor": 0,
+  "false_positives": 13,
+  "edge_rule": true,
+  "gt_dropped_touching_edge": 0,
+  "predictions_dropped_touching_edge": 1,
+  "gt_d_px": [
+    71.71,
+    66.6,
+    17.07,
+    128.44,
+    101.98,
+    84.39,
+    75.97,
+    99.88,
+    74.05,
+    106.47
+  ],
+  "pred_d_px": [
+    15.88,
+    67.51,
+    76.56,
+    92.58,
+    125.59,
+    76.75,
+    82.4,
+    107.12,
+    20.12,
+    78.42,
+    71.22,
+    92.82,
+    75.66,
+    110.84,
+    96.74,
+    90.73,
+    65.15,
+    115.55,
+    71.71,
+    70.9,
+    103.02,
+    84.32,
+    103.88
+  ],
+  "true_positives": 10,
+  "precision": 0.43478260869565216,
+  "recall": 1.0,
+  "f1_score": 0.6060606060606061,
+  "mean_mask_iou_matched": 0.8788611303445755,
+  "mean_box_iou_matched_for_reference": 0.8783143936121484,
+  "missed_entirely": 0,
+  "touched_but_unmatched": 0,
+  "recall_by_size_band": {
+    "100-140px": {
+      "gt": 3,
+      "tp": 3,
+      "recall": 1.0
+    },
+    "12-40px": {
+      "gt": 1,
+      "tp": 1,
+      "recall": 1.0
+    },
+    "40-70px": {
+      "gt": 1,
+      "tp": 1,
+      "recall": 1.0
+    },
+    "70-100px": {
+      "gt": 5,
+      "tp": 5,
+      "recall": 1.0
+    }
+  },
+  "d32_gt_um": 322.73172023607486,
+  "d32_pred_um_ungated": 311.8709340680845,
+  "d32_pred_um_circularity_gated": 311.8709340680845,
+  "d32_ratio_gated": 0.966347323529135,
+  "d32_ratio_ungated": 0.966347323529135,
+  "masks_rejected_by_circularity_gate": 0,
+  "calibration_status": "provisional -- um are 3.291 um/px unconfirmed; pixels are the honest unit",
+  "human_ceiling_reference": {
+    "count_agreement": 0.82,
+    "mean_mask_iou": 0.875,
+    "d32_ratio": 0.96
+  },
+  "per_crop": [
+    {
+      "crop": "RotCoarse_1260rpm_90ppm_300air_800water_f078_full.png",
+      "gt": 0,
+      "pred": 1,
+      "tp": 0
+    },
+    {
+      "crop": "RotCoarse_1260rpm_90ppm_300air_800water_f090_full.png",
+      "gt": 4,
+      "pred": 9,
+      "tp": 4
+    },
+    {
+      "crop": "RotCoarse_1260rpm_90ppm_300air_800water_f097_full.png",
+      "gt": 6,
+      "pred": 13,
+      "tp": 6
+    }
+  ]
+}

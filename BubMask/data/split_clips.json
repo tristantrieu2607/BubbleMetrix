@@ -1,0 +1,28 @@
+{
+  "_comment": [
+    "The clip-level split. Handover principle 3: splits by clip, never by frame --",
+    "frames within a clip share the same window fouling, lighting and bubble",
+    "population, so a frame-level split leaks and reports a score that is partly",
+    "memorisation. Fixed BEFORE training, so it cannot be chosen after seeing a",
+    "result. Test clips cover all three spargers so recall by size band is testable",
+    "across the range; the 1440 rpm condition stays in training so the model is not",
+    "asked to generalise to an rpm it never saw.",
+    "val_clips is carved out of the training side for checkpoint selection only. The test clips are never looked at during training -- choosing a checkpoint on the test set is a quiet way of fitting to it."
+  ],
+  "regime": "rotor_raw",
+  "fixed_on": "2026-09-07",
+  "test_clips": [
+    "RotCoarse_1260rpm_90ppm_300air_800water",
+    "RotFine_1260rpm_90ppm_200air_900water_inline",
+    "RotMed_1260rpm_90ppm_300air_800water"
+  ],
+  "train_clips": [
+    "RotCoarse_1260rpm_90ppm_200air_900water",
+    "RotFine_1260rpm_90ppm_200air_900water",
+    "RotFine_1440rpm_90ppm_200air_900water",
+    "RotMed_1260rpm_90ppm_200air_900water"
+  ],
+  "val_clips": [
+    "RotFine_1260rpm_90ppm_300air_800water"
+  ]
+}

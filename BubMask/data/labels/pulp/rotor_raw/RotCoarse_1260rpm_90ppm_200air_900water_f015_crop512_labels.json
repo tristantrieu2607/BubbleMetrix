@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "image_file": "RotCoarse_1260rpm_90ppm_200air_900water_f015_crop512.png",
+  "relative_path": "RotCoarse_1260rpm_90ppm_200air_900water_f015_crop512.png",
+  "regime": "PULP: Rotor Raw (46-98 px, median 73 -- dense, use 'I' for occluded)",
+  "width": 512,
+  "height": 512,
+  "floor_px": 12.0,
+  "count": 0,
+  "confirmed_empty": true,
+  "bubbles": [],
+  "ignore_regions": [
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 461.8666666666667,
+      "y1": 60.8,
+      "x2": 509.8666666666667,
+      "y2": 155.73333333333332
+    },
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 35.733333333333334,
+      "y1": 49.6,
+      "x2": 101.33333333333333,
+      "y2": 120.0
+    },
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 395.73333333333335,
+      "y1": 163.2,
+      "x2": 493.3333333333333,
+      "y2": 267.73333333333335
+    }
+  ]
+}

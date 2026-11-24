@@ -1,0 +1,20 @@
+Bubble size controls how much mineral a flotation cell recovers, and it is
+summarised by the Sauter mean diameter (D32). In practice D32 is still
+measured from video largely by hand, which is slow and subjective. This
+project built BubbleMetrix, a desktop tool that measures bubble size and
+D32 automatically from flotation video, for both the pulp and the froth
+zone.
+
+For the pulp, a Mask R-CNN instance segmentation model was trained on
+hand-labelled probe footage. Tested on operating conditions it had never
+seen, it measured D32 within 1.5\% of careful hand measurement on average
+(ratio 0.99 ± 0.03 over 8 conditions), as consistent as a person repeating
+their own measurement. For the froth, Cellpose, a general-purpose
+segmentation model, was used without any froth-specific training. It found
+86\% of hand-outlined bubbles and gave a steady D32 of 2.16 mm, in under a
+minute per frame.
+
+BubbleMetrix needs no machine-learning knowledge to use: it measures a
+whole video in one step, reports D32 with a 95\% confidence interval, stops
+once D32 is known to ±5\%, and can be fine-tuned on new footage when a
+quick check shows it is needed.

@@ -1,0 +1,54 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\setsansfont{Latin Modern Sans}
+\setmonofont{Latin Modern Mono}
+\usepackage{unicode-math}
+\setmathfont{Latin Modern Math}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{graphicx,booktabs,longtable,array,calc,float}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage[round,authoryear]{natbib}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue!50!black]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta}
+\usepackage{microtype}
+\setlength{\parskip}{0.5em}\setlength{\parindent}{0pt}
+\renewcommand{\arraystretch}{1.2}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small Bubble Size Measurement in a Novel Flotation Technology}
+\fancyhead[R]{\small T.~Trieu}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\begin{document}
+\begin{titlepage}
+\centering
+\includegraphics[width=3cm]{crest.png}\par\vspace{1.2cm}
+{\large UNSW Sydney\par School of Minerals and Energy Resources Engineering\par}
+\vspace{2.5cm}
+{\LARGE\bfseries Bubble Size Measurement in a\\[2pt] Novel Flotation Technology\par}
+\vspace{0.8cm}
+{\large Deep-learning measurement of bubble size and Sauter mean diameter\\ from pulp and froth video\par}
+\vspace{2.5cm}
+{\large Taste of Research Technical Report\par}
+\vspace{1.8cm}
+{\large Tristan (Quoc Anh) Trieu\par}
+{\normalsize zID: z5793457\par}
+\vspace{0.8cm}
+{\normalsize Supervisor: Prof Seher Ata\par}
+\vfill
+{\normalsize Faculty of Engineering Taste of Research Scholarship, Term 2--Term 3\par November 2026\par}
+\end{titlepage}
+\begin{abstract}
+\noindent\input{abstract.tex}
+\end{abstract}
+\setcounter{tocdepth}{1}\tableofcontents
+\newpage
+\input{body.tex}
+\clearpage\phantomsection\addcontentsline{toc}{section}{References}
+\bibliographystyle{plainnat}
+\bibliography{refs}
+\end{document}

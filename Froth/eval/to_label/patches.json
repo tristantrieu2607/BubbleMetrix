@@ -1,0 +1,52 @@
+{
+ "180WW_froth_t240s_x360y767": {
+  "frame_time_s": 240,
+  "frame_index": 7200,
+  "x0": 360,
+  "y0": 767,
+  "size": 128,
+  "purpose": "lit patch, centre",
+  "context_margin": 32,
+  "context_frames": 3
+ },
+ "180WW_froth_t300s_x270y880": {
+  "frame_time_s": 300,
+  "frame_index": 9000,
+  "x0": 270,
+  "y0": 880,
+  "size": 128,
+  "purpose": "lit patch, lower left",
+  "context_margin": 32,
+  "context_frames": 3
+ },
+ "180WW_froth_t420s_x300y584": {
+  "frame_time_s": 420,
+  "frame_index": 12600,
+  "x0": 300,
+  "y0": 584,
+  "size": 128,
+  "purpose": "straddles hazy band / in-focus edge",
+  "context_margin": 32,
+  "context_frames": 3
+ },
+ "180WW_froth_t360s_x185y640": {
+  "frame_time_s": 360,
+  "frame_index": 10800,
+  "x0": 185,
+  "y0": 640,
+  "size": 128,
+  "purpose": "in focus, outside lit patch (moved off the glass wall)",
+  "context_margin": 32,
+  "context_frames": 3
+ },
+ "180WW_froth_t150s_x440y880": {
+  "frame_time_s": 150,
+  "frame_index": 4500,
+  "x0": 440,
+  "y0": 880,
+  "size": 128,
+  "purpose": "lit patch, lower right; added 2026-10-12 to reach ~260 bubbles",
+  "context_margin": 32,
+  "context_frames": 3
+ }
+}

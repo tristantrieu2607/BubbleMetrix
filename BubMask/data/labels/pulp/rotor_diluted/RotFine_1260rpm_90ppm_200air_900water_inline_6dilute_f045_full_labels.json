@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "image_file": "RotFine_1260rpm_90ppm_200air_900water_inline_6dilute_f045_full.png",
+  "relative_path": "RotFine_1260rpm_90ppm_200air_900water_inline_6dilute_f045_full.png",
+  "regime": "PULP: Rotor Diluted (87-187 px, median 125 -- large and sparse)",
+  "width": 1024,
+  "height": 1024,
+  "floor_px": 12.0,
+  "count": 1,
+  "confirmed_empty": false,
+  "bubbles": [
+    {
+      "shape_type": "circle",
+      "cx": 209.06666666666666,
+      "cy": 856.5333333333333,
+      "r": 58.267734543990066,
+      "label": "bubble",
+      "d_eq_px": 116.54,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    }
+  ],
+  "ignore_regions": []
+}

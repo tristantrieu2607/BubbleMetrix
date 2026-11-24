@@ -1,0 +1,90 @@
+{
+  "schema_version": 2,
+  "image_file": "RotFine_1260rpm_90ppm_300air_800water_f015_crop512.png",
+  "relative_path": "RotFine_1260rpm_90ppm_300air_800water_f015_crop512.png",
+  "regime": "PULP: Rotor Raw (46-98 px, median 73 -- dense, use 'I' for occluded)",
+  "width": 512,
+  "height": 512,
+  "floor_px": 12.0,
+  "count": 3,
+  "confirmed_empty": false,
+  "bubbles": [
+    {
+      "shape_type": "circle",
+      "cx": 248.53333333333333,
+      "cy": 59.2,
+      "r": 27.257455656918683,
+      "label": "bubble",
+      "d_eq_px": 54.51,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 178.66666666666666,
+      "cy": 296.53333333333336,
+      "r": 35.76913629249537,
+      "label": "bubble",
+      "d_eq_px": 71.54,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 93.86666666666666,
+      "cy": 230.93333333333334,
+      "r": 41.173886006653376,
+      "label": "bubble",
+      "d_eq_px": 82.35,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    }
+  ],
+  "ignore_regions": [
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 231.46666666666667,
+      "y1": 400.0,
+      "x2": 317.8666666666667,
+      "y2": 502.93333333333334
+    },
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 380.26666666666665,
+      "y1": 242.66666666666666,
+      "x2": 475.73333333333335,
+      "y2": 347.2
+    },
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 239.46666666666667,
+      "y1": 280.53333333333336,
+      "x2": 331.73333333333335,
+      "y2": 376.0
+    },
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 29.866666666666667,
+      "y1": 287.46666666666664,
+      "x2": 102.93333333333334,
+      "y2": 365.3333333333333
+    }
+  ]
+}

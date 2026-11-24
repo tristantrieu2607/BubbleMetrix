@@ -1,0 +1,43 @@
+{
+  "f299_partial": {
+    "image": "data/180WW_f00299_eval_sub_x168y464.png",
+    "labels": "data/180WW_f00299_x104y400_labels.json",
+    "label_offset": [
+      64,
+      64
+    ],
+    "fully_labelled": false,
+    "where": "samples/froth/180WW.MP4 frame 299; labels drawn on the 512 px crop at frame (104, 400); this 384 px evaluation crop is frame (168, 464), i.e. crop (64, 64)",
+    "note": "26 hand-stamped circles, all >= 17 px, out of several hundred visible bubbles. Recall, IoU and sizing only - no precision."
+  },
+  "p1_t240s_v1_partial": {
+    "image": "to_label/180WW_froth_t240s_x360y767.png",
+    "labels": "to_label/labels/_v1_loops_2026-10-06/180WW_froth_t240s_x360y767_labels.json",
+    "label_offset": [
+      0,
+      0
+    ],
+    "frame_origin": [
+      360,
+      767
+    ],
+    "fully_labelled": true,
+    "where": "samples/froth/180WW.MP4 t=240 s (frame 7200), 128 px patch at (360, 767); lit, centre of the in-focus band. No method was run on this frame before labelling.",
+    "note": "Border-drawn by Tristan: 51 bubbles outlined as closed loops; the rest of the patch (64% of pixels) is one unresolved region, auto-unsure because it touches the edge. Strict precision counts every prediction there; local precision (--unsure-as-ignore) does not. Superseded by the full relabel (case p1_t240s); kept for intra-annotator repeatability."
+  },
+  "frame_t150s": {
+    "image": "to_label_frame/180WW_t150s_roi.png",
+    "labels": "to_label_frame/labels/180WW_t150s_roi_labels.json",
+    "label_offset": [
+      0,
+      0
+    ],
+    "frame_origin": [
+      146,
+      632
+    ],
+    "fully_labelled": true,
+    "where": "samples/froth/180WW.MP4 t=150 s (frame 4500), the GUI in-focus region (146,632)-(634,1040). No model overlay shown for this frame before labelling.",
+    "note": "Freehand outlines by Tristan (frame_annotator.py). Complete inside the tiles marked complete; everything else is ignore. Precision, recall, size error and same-area D32 are valid there."
+  }
+}

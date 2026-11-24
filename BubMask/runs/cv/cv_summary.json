@@ -1,0 +1,155 @@
+{
+  "pooled": {
+    "gt": 377,
+    "pred": 772,
+    "tp": 343,
+    "recall": 0.9098143236074271,
+    "precision": 0.44430051813471505,
+    "d32_ratio_px": 0.9922666096476124,
+    "recall_by_size_band": {
+      "100-140px": {
+        "gt": 33,
+        "tp": 32,
+        "recall": 0.9696969696969697
+      },
+      "12-40px": {
+        "gt": 31,
+        "tp": 23,
+        "recall": 0.7419354838709677
+      },
+      "40-70px": {
+        "gt": 112,
+        "tp": 100,
+        "recall": 0.8928571428571429
+      },
+      "70-100px": {
+        "gt": 199,
+        "tp": 186,
+        "recall": 0.9346733668341709
+      },
+      "140+px": {
+        "gt": 2,
+        "tp": 2,
+        "recall": 1.0
+      }
+    }
+  },
+  "conf": 0.4,
+  "epochs": 12,
+  "checkpoint": "last.pt",
+  "with_val": false,
+  "folds": [
+    {
+      "fold": 0,
+      "test_clip": "RotCoarse_1260rpm_90ppm_200air_900water",
+      "n_gt": 66,
+      "recall": 0.8939393939393939,
+      "precision": 0.5042735042735043,
+      "f1_score": 0.6448087431693988,
+      "mean_mask_iou_matched": 0.8955208078053181,
+      "d32_ratio_gated": 1.0142862608924779
+    },
+    {
+      "fold": 1,
+      "test_clip": "RotCoarse_1260rpm_90ppm_300air_800water",
+      "n_gt": 10,
+      "recall": 1.0,
+      "precision": 0.43478260869565216,
+      "f1_score": 0.6060606060606061,
+      "mean_mask_iou_matched": 0.8788611303445755,
+      "d32_ratio_gated": 0.966347323529135
+    },
+    {
+      "fold": 2,
+      "test_clip": "RotFine_1260rpm_90ppm_200air_900water",
+      "n_gt": 48,
+      "recall": 0.9375,
+      "precision": 0.3879310344827586,
+      "f1_score": 0.548780487804878,
+      "mean_mask_iou_matched": 0.8899555116440127,
+      "d32_ratio_gated": 0.9787602378266678
+    },
+    {
+      "fold": 3,
+      "test_clip": "RotFine_1260rpm_90ppm_200air_900water_inline",
+      "n_gt": 34,
+      "recall": 1.0,
+      "precision": 0.4594594594594595,
+      "f1_score": 0.6296296296296297,
+      "mean_mask_iou_matched": 0.9074504576374383,
+      "d32_ratio_gated": 0.9139905510378201
+    },
+    {
+      "fold": 4,
+      "test_clip": "RotFine_1260rpm_90ppm_300air_800water",
+      "n_gt": 42,
+      "recall": 0.9047619047619048,
+      "precision": 0.3838383838383838,
+      "f1_score": 0.5390070921985816,
+      "mean_mask_iou_matched": 0.8876133898170578,
+      "d32_ratio_gated": 1.0099167714349593
+    },
+    {
+      "fold": 5,
+      "test_clip": "RotFine_1440rpm_90ppm_200air_900water",
+      "n_gt": 50,
+      "recall": 0.92,
+      "precision": 0.4144144144144144,
+      "f1_score": 0.5714285714285714,
+      "mean_mask_iou_matched": 0.8955914013011039,
+      "d32_ratio_gated": 0.9829907481556206
+    },
+    {
+      "fold": 6,
+      "test_clip": "RotMed_1260rpm_90ppm_200air_900water",
+      "n_gt": 98,
+      "recall": 0.8877551020408163,
+      "precision": 0.5028901734104047,
+      "f1_score": 0.6420664206642066,
+      "mean_mask_iou_matched": 0.8771787970695744,
+      "d32_ratio_gated": 1.022564174852897
+    },
+    {
+      "fold": 7,
+      "test_clip": "RotMed_1260rpm_90ppm_300air_800water",
+      "n_gt": 29,
+      "recall": 0.8275862068965517,
+      "precision": 0.4067796610169492,
+      "f1_score": 0.5454545454545454,
+      "mean_mask_iou_matched": 0.8729347497995453,
+      "d32_ratio_gated": 0.9924392202004004
+    }
+  ],
+  "aggregate": {
+    "recall": {
+      "mean": 0.9214428259548333,
+      "sd": 0.05804061799539175,
+      "min": 0.8275862068965517,
+      "max": 1.0
+    },
+    "precision": {
+      "mean": 0.4367961549489408,
+      "sd": 0.04785924216551358,
+      "min": 0.3838383838383838,
+      "max": 0.5042735042735043
+    },
+    "f1_score": {
+      "mean": 0.5909045120513022,
+      "sd": 0.04498465813917935,
+      "min": 0.5390070921985816,
+      "max": 0.6448087431693988
+    },
+    "mean_mask_iou_matched": {
+      "mean": 0.8881382806773283,
+      "sd": 0.01148857744497894,
+      "min": 0.8729347497995453,
+      "max": 0.9074504576374383
+    },
+    "d32_ratio_gated": {
+      "mean": 0.9851619109912473,
+      "sd": 0.034595552956193945,
+      "min": 0.9139905510378201,
+      "max": 1.022564174852897
+    }
+  }
+}

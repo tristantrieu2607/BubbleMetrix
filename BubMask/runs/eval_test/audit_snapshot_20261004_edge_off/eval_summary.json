@@ -1,0 +1,119 @@
+{
+  "weights": "runs/rr_full_e20/best.pt",
+  "split_note": "test side of data/split_clips.json: 9 crops from 3 held-out clip(s) -- RotCoarse_1260rpm_90ppm_300air_800water, RotFine_1260rpm_90ppm_200air_900water_inline, RotMed_1260rpm_90ppm_300air_800water",
+  "crops_evaluated": 9,
+  "iou_threshold": 0.5,
+  "score_threshold": 0.4,
+  "iou_kind": "mask",
+  "diameter_measurand": "equivalent-area diameter (2*sqrt(A/pi)), both sides",
+  "total_gt_bubbles": 76,
+  "total_pred_bubbles": 159,
+  "predictions_dropped_inside_ignore": 13,
+  "predictions_dropped_below_floor": 0,
+  "false_positives": 96,
+  "predictions_occluded": 1,
+  "d32_ratio_visible_only": 0.9627461033045328,
+  "true_positives": 63,
+  "precision": 0.39622641509433965,
+  "recall": 0.8289473684210527,
+  "f1_score": 0.5361702127659574,
+  "mean_mask_iou_matched": 0.8885996310552007,
+  "mean_box_iou_matched_for_reference": 0.887877313965187,
+  "missed_entirely": 11,
+  "touched_but_unmatched": 2,
+  "recall_by_size_band": {
+    "100-140px": {
+      "gt": 14,
+      "tp": 12,
+      "recall": 0.8571428571428571
+    },
+    "12-40px": {
+      "gt": 2,
+      "tp": 1,
+      "recall": 0.5
+    },
+    "140+px": {
+      "gt": 1,
+      "tp": 1,
+      "recall": 1.0
+    },
+    "40-70px": {
+      "gt": 15,
+      "tp": 13,
+      "recall": 0.8666666666666667
+    },
+    "70-100px": {
+      "gt": 44,
+      "tp": 36,
+      "recall": 0.8181818181818182
+    }
+  },
+  "d32_gt_um": 314.8319694965062,
+  "d32_pred_um_ungated": 302.7487639719383,
+  "d32_pred_um_circularity_gated": 302.7487639719383,
+  "d32_ratio_gated": 0.9616201444094387,
+  "d32_ratio_ungated": 0.9616201444094387,
+  "masks_rejected_by_circularity_gate": 0,
+  "calibration_status": "provisional -- um are 3.291 um/px unconfirmed; pixels are the honest unit",
+  "human_ceiling_reference": {
+    "count_agreement": 0.82,
+    "mean_mask_iou": 0.875,
+    "d32_ratio": 0.96
+  },
+  "per_crop": [
+    {
+      "crop": "RotCoarse_1260rpm_90ppm_300air_800water_f078_full.png",
+      "gt": 0,
+      "pred": 3,
+      "tp": 0
+    },
+    {
+      "crop": "RotCoarse_1260rpm_90ppm_300air_800water_f090_full.png",
+      "gt": 4,
+      "pred": 12,
+      "tp": 4
+    },
+    {
+      "crop": "RotCoarse_1260rpm_90ppm_300air_800water_f097_full.png",
+      "gt": 6,
+      "pred": 13,
+      "tp": 5
+    },
+    {
+      "crop": "RotFine_1260rpm_90ppm_200air_900water_inline_f023_full.png",
+      "gt": 18,
+      "pred": 35,
+      "tp": 17
+    },
+    {
+      "crop": "RotFine_1260rpm_90ppm_200air_900water_inline_f056_full.png",
+      "gt": 10,
+      "pred": 21,
+      "tp": 10
+    },
+    {
+      "crop": "RotFine_1260rpm_90ppm_200air_900water_inline_f091_full.png",
+      "gt": 9,
+      "pred": 26,
+      "tp": 9
+    },
+    {
+      "crop": "RotMed_1260rpm_90ppm_300air_800water_f029_full.png",
+      "gt": 5,
+      "pred": 8,
+      "tp": 4
+    },
+    {
+      "crop": "RotMed_1260rpm_90ppm_300air_800water_f037_full.png",
+      "gt": 5,
+      "pred": 13,
+      "tp": 3
+    },
+    {
+      "crop": "RotMed_1260rpm_90ppm_300air_800water_f059_full.png",
+      "gt": 19,
+      "pred": 28,
+      "tp": 11
+    }
+  ]
+}

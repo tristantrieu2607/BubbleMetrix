@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "image_file": "180WW_froth_t360s_x185y640.png",
+  "relative_path": "180WW_froth_t360s_x185y640.png",
+  "regime": "FROTH facets (stamped 17-55 px, median 24) -- 'M' for ellipse",
+  "width": 128,
+  "height": 128,
+  "floor_px": 12.0,
+  "count": 0,
+  "confirmed_empty": false,
+  "bubbles": [],
+  "ignore_regions": []
+}

@@ -1,0 +1,105 @@
+{
+  "image_file": "Venturi_500_air_90_ppm_f065_crop512.png",
+  "relative_path": "venturi_air/Venturi_500_air_90_ppm_f065_crop512.png",
+  "regime": "PULP: Venturi Air (Microbubbles 10-35px)",
+  "width": 512,
+  "height": 512,
+  "count": 5,
+  "bubbles": [
+    {
+      "shape_type": "circle",
+      "cx": 346.6666666666667,
+      "cy": 213.86666666666667,
+      "r": 67.64088178674852,
+      "label": "bubble",
+      "d_eq_px": 135.28,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 176.0,
+      "cy": 288.0,
+      "r": 6.444291185917108,
+      "label": "bubble",
+      "d_eq_px": 12.89,
+      "at_limit": true,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 429.3333333333333,
+      "cy": 80.0,
+      "r": 12.677188612271705,
+      "label": "bubble",
+      "d_eq_px": 25.35,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 392.0,
+      "cy": 173.33333333333334,
+      "r": 70.9172914191047,
+      "label": "bubble",
+      "d_eq_px": 141.83,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 492.8,
+      "cy": 408.0,
+      "r": 7.636171233747387,
+      "label": "bubble",
+      "d_eq_px": 15.27,
+      "at_limit": true,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    }
+  ],
+  "ignore_regions": [],
+  "confirmed_empty": false,
+  "schema_version": 2,
+  "floor_px": 12.0,
+  "dropped_below_floor": [
+    {
+      "shape_type": "circle",
+      "cx": 234.13333333333333,
+      "cy": 322.1333333333333,
+      "r": 4.917090377222878,
+      "label": "bubble",
+      "_dropped_reason": "below_floor (9.8px < 12px)"
+    },
+    {
+      "shape_type": "circle",
+      "cx": 174.4,
+      "cy": 340.8,
+      "r": 5.768882040742362,
+      "label": "bubble",
+      "_dropped_reason": "below_floor (11.5px < 12px)"
+    },
+    {
+      "shape_type": "circle",
+      "cx": 284.26666666666665,
+      "cy": 354.1333333333333,
+      "r": 4.397979333992156,
+      "label": "bubble",
+      "_dropped_reason": "below_floor (8.8px < 12px)"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+[02:26:52] START cellpose video run
+[02:26:52] frame 0000
+[02:28:39] FAILED 0000 (exit 1)
+[02:28:39] frame t0030s
+[02:29:23] FAILED t0030s (exit 1)
+[02:29:23] frame t0060s
+[02:30:09] FAILED t0060s (exit 1)
+[02:30:09] frame t0120s
+[02:30:51] FAILED t0120s (exit 1)
+[02:30:51] frame t0180s
+[02:31:35] FAILED t0180s (exit 1)
+[02:31:35] labelled crop f299_partial
+[02:32:09] eval error: Cellpose failed (1)
+[02:32:09] FAILED labelled crop
+[02:32:09] FINISHED WITH 6 FAILURE(S)
+[02:34:28] START cellpose video run
+[02:34:28] frame 0000
+[02:35:28] done 0000
+[02:35:28] frame t0030s
+[02:36:22] done t0030s
+[02:36:22] frame t0060s
+[02:37:09] done t0060s
+[02:37:09] frame t0120s
+[02:37:52] done t0120s
+[02:37:52] frame t0180s
+[02:38:34] done t0180s
+[02:38:34] labelled crop f299_partial
+[02:39:08] ALL DONE

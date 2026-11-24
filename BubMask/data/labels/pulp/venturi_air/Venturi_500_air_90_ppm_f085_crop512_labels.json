@@ -1,0 +1,13 @@
+{
+  "image_file": "Venturi_500_air_90_ppm_f085_crop512.png",
+  "relative_path": "venturi_air/Venturi_500_air_90_ppm_f085_crop512.png",
+  "regime": "PULP: Venturi Air (Microbubbles 10-35px)",
+  "width": 512,
+  "height": 512,
+  "count": 0,
+  "bubbles": [],
+  "ignore_regions": [],
+  "confirmed_empty": false,
+  "schema_version": 2,
+  "floor_px": 12.0
+}

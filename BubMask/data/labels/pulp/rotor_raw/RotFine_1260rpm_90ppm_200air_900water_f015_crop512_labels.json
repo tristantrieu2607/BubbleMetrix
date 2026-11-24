@@ -1,0 +1,90 @@
+{
+  "schema_version": 2,
+  "image_file": "RotFine_1260rpm_90ppm_200air_900water_f015_crop512.png",
+  "relative_path": "RotFine_1260rpm_90ppm_200air_900water_f015_crop512.png",
+  "regime": "PULP: Rotor Raw (46-98 px, median 73 -- dense, use 'I' for occluded)",
+  "width": 512,
+  "height": 512,
+  "floor_px": 12.0,
+  "count": 3,
+  "confirmed_empty": false,
+  "bubbles": [
+    {
+      "shape_type": "circle",
+      "cx": 374.4,
+      "cy": 214.93333333333334,
+      "r": 42.30513496544415,
+      "label": "bubble",
+      "d_eq_px": 84.61,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 225.06666666666666,
+      "cy": 411.2,
+      "r": 26.479342052920373,
+      "label": "bubble",
+      "d_eq_px": 52.96,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 465.6,
+      "cy": 158.93333333333334,
+      "r": 44.907806794711206,
+      "label": "bubble",
+      "view": "clahe",
+      "d_eq_px": 89.82,
+      "at_limit": false,
+      "touches_edge": false,
+      "touches_fov": false,
+      "unsure": false
+    }
+  ],
+  "ignore_regions": [
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 50.666666666666664,
+      "y1": 233.06666666666666,
+      "x2": 144.53333333333333,
+      "y2": 332.8
+    },
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 365.3333333333333,
+      "y1": 368.0,
+      "x2": 422.4,
+      "y2": 435.2
+    },
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 286.4,
+      "y1": 323.2,
+      "x2": 385.06666666666666,
+      "y2": 426.1333333333333
+    },
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 99.73333333333333,
+      "y1": 319.46666666666664,
+      "x2": 142.93333333333334,
+      "y2": 362.1333333333333
+    }
+  ]
+}

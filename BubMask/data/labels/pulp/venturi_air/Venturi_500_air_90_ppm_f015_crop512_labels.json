@@ -1,0 +1,157 @@
+{
+  "image_file": "Venturi_500_air_90_ppm_f015_crop512.png",
+  "relative_path": "venturi_air/Venturi_500_air_90_ppm_f015_crop512.png",
+  "regime": "PULP: Venturi Air (Microbubbles 10-35px)",
+  "width": 512,
+  "height": 512,
+  "count": 9,
+  "bubbles": [
+    {
+      "shape_type": "circle",
+      "cx": 394.1333333333333,
+      "cy": 109.33333333333333,
+      "r": 6.242506619050471,
+      "label": "bubble",
+      "d_eq_px": 12.49,
+      "at_limit": true,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 284.26666666666665,
+      "cy": 106.66666666666667,
+      "r": 9.329523031752487,
+      "label": "bubble",
+      "d_eq_px": 18.66,
+      "at_limit": true,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 181.86666666666667,
+      "cy": 357.3333333333333,
+      "r": 11.805836597961989,
+      "label": "bubble",
+      "d_eq_px": 23.61,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 16.533333333333335,
+      "cy": 361.06666666666666,
+      "r": 8.140980011986002,
+      "label": "bubble",
+      "d_eq_px": 16.28,
+      "at_limit": true,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 346.6666666666667,
+      "cy": 469.8666666666667,
+      "r": 7.175266158439268,
+      "label": "bubble",
+      "d_eq_px": 14.35,
+      "at_limit": true,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 193.06666666666666,
+      "cy": 38.93333333333333,
+      "r": 7.636171233747399,
+      "label": "bubble",
+      "d_eq_px": 15.27,
+      "at_limit": true,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 216.53333333333333,
+      "cy": 135.46666666666667,
+      "r": 6.933333333333335,
+      "label": "bubble",
+      "d_eq_px": 13.87,
+      "at_limit": true,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 306.6666666666667,
+      "cy": 411.73333333333335,
+      "r": 12.161871201057428,
+      "label": "bubble",
+      "d_eq_px": 24.32,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 309.8666666666667,
+      "cy": 496.53333333333336,
+      "r": 9.329523031752487,
+      "label": "bubble",
+      "d_eq_px": 18.66,
+      "at_limit": true,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    }
+  ],
+  "ignore_regions": [],
+  "confirmed_empty": false,
+  "schema_version": 2,
+  "floor_px": 12.0,
+  "dropped_below_floor": [
+    {
+      "shape_type": "circle",
+      "cx": 485.3333333333333,
+      "cy": 314.1333333333333,
+      "r": 5.96284793999943,
+      "label": "bubble",
+      "_dropped_reason": "below_floor (11.9px < 12px)"
+    },
+    {
+      "shape_type": "circle",
+      "cx": 442.1333333333333,
+      "cy": 312.53333333333336,
+      "r": 5.438954147832285,
+      "label": "bubble",
+      "_dropped_reason": "below_floor (10.9px < 12px)"
+    },
+    {
+      "shape_type": "circle",
+      "cx": 213.86666666666667,
+      "cy": 380.26666666666665,
+      "r": 5.568163471418995,
+      "label": "bubble",
+      "_dropped_reason": "below_floor (11.1px < 12px)"
+    }
+  ]
+}

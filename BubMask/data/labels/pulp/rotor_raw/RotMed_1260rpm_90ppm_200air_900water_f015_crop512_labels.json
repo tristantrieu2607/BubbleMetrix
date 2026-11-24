@@ -1,0 +1,124 @@
+{
+  "schema_version": 2,
+  "image_file": "RotMed_1260rpm_90ppm_200air_900water_f015_crop512.png",
+  "relative_path": "RotMed_1260rpm_90ppm_200air_900water_f015_crop512.png",
+  "regime": "PULP: Rotor Raw (46-98 px, median 73 -- dense, use 'I' for occluded)",
+  "width": 512,
+  "height": 512,
+  "floor_px": 12.0,
+  "count": 7,
+  "confirmed_empty": false,
+  "bubbles": [
+    {
+      "shape_type": "circle",
+      "cx": 260.8,
+      "cy": 339.73333333333335,
+      "r": 48.909894477270925,
+      "label": "bubble",
+      "d_eq_px": 97.82,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 185.06666666666666,
+      "cy": 368.0,
+      "r": 31.435012327021578,
+      "label": "bubble",
+      "d_eq_px": 62.87,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 443.2,
+      "cy": 97.06666666666666,
+      "r": 35.09479226957247,
+      "label": "bubble",
+      "d_eq_px": 70.19,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 482.1333333333333,
+      "cy": 328.53333333333336,
+      "r": 36.09764535257112,
+      "label": "bubble",
+      "d_eq_px": 72.2,
+      "at_limit": false,
+      "touches_edge": true,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 345.06666666666666,
+      "cy": 321.06666666666666,
+      "r": 36.454415980021466,
+      "label": "bubble",
+      "d_eq_px": 72.91,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 380.26666666666665,
+      "cy": 379.2,
+      "r": 29.177769315391863,
+      "label": "bubble",
+      "d_eq_px": 58.36,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 236.8,
+      "cy": 90.13333333333334,
+      "r": 51.04699359957993,
+      "label": "bubble",
+      "d_eq_px": 102.09,
+      "at_limit": false,
+      "touches_edge": false,
+      "unsure": false,
+      "view": "unknown",
+      "touches_fov": false
+    }
+  ],
+  "ignore_regions": [
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 324.8,
+      "y1": 136.0,
+      "x2": 420.26666666666665,
+      "y2": 237.33333333333334
+    },
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 416.0,
+      "y1": 211.2,
+      "x2": 510.4,
+      "y2": 284.8
+    }
+  ]
+}

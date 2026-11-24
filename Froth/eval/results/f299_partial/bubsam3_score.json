@@ -1,0 +1,30 @@
+{
+  "method": "BubSAM3",
+  "case": "f299_partial",
+  "fully_labelled": false,
+  "n_gt": 26,
+  "n_gt_unsure": 0,
+  "n_pred": 597,
+  "tp": 23,
+  "recall": 0.8846153846153846,
+  "recall_ci95": [
+    0.71,
+    0.96
+  ],
+  "mean_iou": 0.7082098244742372,
+  "mean_diam_ratio": 0.9285642373847337,
+  "median_abs_diam_err": 0.09874502142930308,
+  "d32_ratio_matched": 0.9109604628800095,
+  "missed_entirely": 0,
+  "touched_unmatched": 3,
+  "label_floor_px": 12.0,
+  "recall_by_band": {
+    "0-12": "0/0",
+    "12-17": "0/0",
+    "17-25": "11/13",
+    "25+": "12/13"
+  },
+  "precision": null,
+  "precision_note": "not computable: partially labelled case",
+  "pred_file": "results/f299_partial/runs/bubsam3/bubsam3_instances.npz"
+}

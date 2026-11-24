@@ -1,0 +1,156 @@
+{
+  "schema_version": 2,
+  "image_file": "RotCoarse_1260rpm_90ppm_200air_900water_f091_full.png",
+  "relative_path": "RotCoarse_1260rpm_90ppm_200air_900water_f091_full.png",
+  "regime": "PULP: Rotor Raw (46-98 px, median 73 -- dense, use 'I' for occluded)",
+  "width": 1024,
+  "height": 1024,
+  "floor_px": 12.0,
+  "count": 6,
+  "confirmed_empty": false,
+  "bubbles": [
+    {
+      "shape_type": "circle",
+      "cx": 651.7333333333333,
+      "cy": 899.2,
+      "r": 38.16222681599638,
+      "label": "bubble",
+      "view": "clahe",
+      "d_eq_px": 76.32,
+      "at_limit": false,
+      "touches_edge": false,
+      "touches_fov": false,
+      "unsure": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 168.53333333333333,
+      "cy": 491.73333333333335,
+      "r": 46.15105632593904,
+      "label": "bubble",
+      "view": "raw",
+      "d_eq_px": 92.3,
+      "at_limit": false,
+      "touches_edge": false,
+      "touches_fov": false,
+      "unsure": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 896.0,
+      "cy": 683.7333333333333,
+      "r": 41.5452631341876,
+      "label": "bubble",
+      "view": "clahe",
+      "d_eq_px": 83.09,
+      "at_limit": false,
+      "touches_edge": false,
+      "touches_fov": false,
+      "unsure": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 605.1392853333334,
+      "cy": 829.2406613333333,
+      "r": 40.80025250476847,
+      "label": "bubble",
+      "view": "clahe",
+      "d_eq_px": 81.6,
+      "at_limit": false,
+      "touches_edge": false,
+      "touches_fov": false,
+      "unsure": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 538.4362666666666,
+      "cy": 806.8437333333334,
+      "r": 40.31411111845472,
+      "label": "bubble",
+      "view": "clahe",
+      "d_eq_px": 80.63,
+      "at_limit": false,
+      "touches_edge": false,
+      "touches_fov": false,
+      "unsure": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 722.5123089066666,
+      "cy": 862.5770359466666,
+      "r": 38.21998899967862,
+      "label": "bubble",
+      "view": "clahe",
+      "d_eq_px": 76.44,
+      "at_limit": false,
+      "touches_edge": false,
+      "touches_fov": false,
+      "unsure": false
+    }
+  ],
+  "ignore_regions": [
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 630.4,
+      "y1": 747.7333333333333,
+      "x2": 725.3333333333334,
+      "y2": 835.2
+    },
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 522.6666666666666,
+      "y1": 538.6666666666666,
+      "x2": 616.5333333333333,
+      "y2": 634.6666666666666
+    },
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 468.26666666666665,
+      "y1": 646.4,
+      "x2": 545.0666666666667,
+      "y2": 726.4
+    },
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 430.93333333333334,
+      "y1": 614.4,
+      "x2": 519.4666666666667,
+      "y2": 688.0
+    },
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 252.81501866666656,
+      "y1": 410.13862400000005,
+      "x2": 367.4593279999999,
+      "y2": 510.1028693333334
+    },
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 683.7333333333333,
+      "y1": 455.46666666666664,
+      "x2": 823.4666666666667,
+      "y2": 588.8
+    },
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 368.0,
+      "y1": 920.5333333333333,
+      "x2": 477.8666666666667,
+      "y2": 1016.5333333333333
+    }
+  ]
+}

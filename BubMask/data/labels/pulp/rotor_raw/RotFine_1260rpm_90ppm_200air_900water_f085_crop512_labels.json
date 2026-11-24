@@ -1,0 +1,86 @@
+{
+  "schema_version": 2,
+  "image_file": "RotFine_1260rpm_90ppm_200air_900water_f085_crop512.png",
+  "relative_path": "RotFine_1260rpm_90ppm_200air_900water_f085_crop512.png",
+  "regime": "PULP: Rotor Raw (46-98 px, median 73 -- dense, use 'I' for occluded)",
+  "width": 512,
+  "height": 512,
+  "floor_px": 12.0,
+  "count": 2,
+  "confirmed_empty": false,
+  "bubbles": [
+    {
+      "shape_type": "circle",
+      "cx": 225.06666666666666,
+      "cy": 457.06666666666666,
+      "r": 31.714279994279483,
+      "label": "bubble",
+      "view": "clahe",
+      "d_eq_px": 63.43,
+      "at_limit": false,
+      "touches_edge": false,
+      "touches_fov": false,
+      "unsure": false
+    },
+    {
+      "shape_type": "circle",
+      "cx": 345.06666666666666,
+      "cy": 444.26666666666665,
+      "r": 34.58451805199674,
+      "label": "bubble",
+      "view": "clahe",
+      "d_eq_px": 69.17,
+      "at_limit": false,
+      "touches_edge": false,
+      "touches_fov": false,
+      "unsure": false
+    }
+  ],
+  "ignore_regions": [
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 33.06666666666667,
+      "y1": 320.53333333333336,
+      "x2": 99.73333333333333,
+      "y2": 393.6
+    },
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 83.73333333333333,
+      "y1": 309.3333333333333,
+      "x2": 179.2,
+      "y2": 434.6666666666667
+    },
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 469.3333333333333,
+      "y1": 33.6,
+      "x2": 510.4,
+      "y2": 107.73333333333333
+    },
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 284.26666666666665,
+      "y1": 206.4,
+      "x2": 387.73333333333335,
+      "y2": 297.6
+    },
+    {
+      "type": "rect",
+      "label": "ignore",
+      "iscrowd": 1,
+      "x1": 355.2,
+      "y1": 324.26666666666665,
+      "x2": 420.8,
+      "y2": 390.4
+    }
+  ]
+}
